@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>carrer</title>
+</head>
+<body>
+    <header>
+        
+         <div class="navigation" id="navigation">
+            <div class="menu" id="menu" > 
+                
+
+                    <div id="mySidenav" class="sidenav">
+                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                         <ul class="ul2" id="ul2">
+                             </ul>
+                             <span  class="overlayMenu " id="overlayMenu" onclick="openNav()"> &#9776; </span>
+                            </div>
+                <div class="menuBar" id="menubar"></div>
+                <div class="logocont">
+                    <h1 class="logo"><a href="index.html">punch</a>
+                    </h1>
+                </div>
+              
+            </div>
+
+                </div>
+                
+               
+
+            <div class="userarea">
+                <span  class="openArea" id="openArea"  onclick="openareaNav()"> 
+                    <i class="fa-solid fa-circle-user" id="fauser" ></i>
+                </span>
+            </div>
+            <div id="logARea" class="logARea">
+                <a href="javascript:void(0)" class="closeareabtn" onclick="closeareaNav()"><i class="fa-solid fa-xmark"></i></a>
+                <input type="text" name="userusername" id="userusername" class="userusername" placeholder="enter username...">
+                <input type="password" name="userpassword" id="userpassword" class="userpassword" placeholder="enter your password...">
+                <span class="rememberuserspan"> remember user</span>
+                <input type="checkbox" name="rememberuser" id="rememberuser" class="rememberuser">
+                <button type="submit" id="signin" class="signin"> sign in </button>
+
+              </div>
+          
+        <!-- </div>
+
+        </div> -->
+        
+    </header>
+
+
+
+    <main>
+
+        <section>
+            <div class="searchbox">
+                <h3 class="serchboxTitle"> search cocktails</h3>
+                <input type="search" name="searchSpace" id="searchSpace" class="searchSpace" placeholder="type your drink...">
+            </div>
+        </section>
+        
+        <div class="cocktailsWraper" id="cocktailsWraper">
+
+        </div>
+        
+        
+        
+        <div class="overlay" id="overlay">
+            <div class="content" id="content"></div>
+            <div class="close" id="close"> X </div>
+        </div>
+        
+        
+        <div class="add-drink" id="add">
+        +
+        </div>
+        <div class="overlay-add" id="overlay-add">
+            <form action="#" id="forma">
+                <label for="drinktitle">drink title </label>
+                <input type="text" name="title" id="drinktitle" class="drinktitle">
+                <label for="description">drink description</label>
+                <textarea name="description" id="description" class="description" cols="30" rows="10"></textarea>
+                <button type="submit" class="sub" id="sub">add drink</button>
+            </form>
+        </div>
+
+
+
+
+        <button onclick="topFunction()" id="myBtn" class="myBtn"  title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+        
+    </main>
+
+
+
+
+
+    <footer>
+        <div class="foot">
+            <div class="socmedia">
+                <p class="find">follow us 
+                </p>
+    
+                <p> <a href="#"><i class="fa-brands fa-instagram"></i></a></p>
+                <p><a href=""><i class="fa-brands fa-facebook"></i></a></p>
+                <p><a href=""><i class="fa-brands fa-youtube"></i></a></p>
+                <p><a href=""><i class="fa-brands fa-spotify"></i></a></p>
+            </div>
+
+            <div class="copyrights">
+                
+                <i class="fa-regular fa-copyright"></i>
+                <p>All rights reserved</p>
+            </div>
+            <div class="termsandconditions">
+                <a href=""><p><b>terms and conditions</b></p></a>
+                <p>contact us <i class="fa-solid fa-phone"></i> 555 555 555   </p>
+                <address><p>4 Freedom Square, Tbilisi 0105</p></address>
+                <map name="mapp" class="mapp"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2979.2586340916546!2d44.79932251537277!3d41.69335207923725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cee4ce65829%3A0x8d33d69b9c5a4b1e!2sCourtyard%20by%20Marriott%20Tbilisi!5e0!3m2!1sen!2sge!4v1668614218520!5m2!1sen!2sge" width="300" height="100" style="border: 2px solid white;"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></map>
+
+            </div>
+            
+
+
+        </div>
+    </footer>
+    <script src="scripts/drinks.js"></script>
+    <!-- <script src="scripts/slider.js"></script> -->
+    <script src="scripts/scripts.js"></script>
+    
+</body>
+</html>

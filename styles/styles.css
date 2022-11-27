@@ -1,0 +1,2761 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    
+}
+
+
+
+
+/* heacder  and navigation styles */
+
+.navigation{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:rgba(59, 50, 50, 0.944);
+    margin-bottom: 50px;
+   
+    
+}
+
+
+
+
+.sidenav {
+    display: none;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+
+
+.menu{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.menuBar{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navUl{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+   padding: 15px;
+}
+.navLi{
+    padding: 10px;
+    font-size: 24px;
+
+    text-transform:capitalize;
+    color: black;
+    font-weight: 500;
+
+}
+a{
+    color: black;
+    transition: 0.2s;
+}
+.navLi:hover{
+    border-bottom: 1px solid rgb(93, 88, 85);
+    font-weight: 600;
+    transition: 0.3s;
+    
+}
+.logocont{
+    width: 10%;
+    background-color: antiquewhite;
+    display: block;
+    padding: 10px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: capitalize;
+    outline: 1px solid red;
+    
+}
+
+main{
+    padding-top: 80px;
+   
+}
+
+.logo:hover{
+    text-decoration: overline;
+   
+}
+.logARea {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color:rgba(231, 223, 223, 0.944);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    padding-left: 20px;
+    /* border-top-left-radius: 20%; */
+    border-bottom-left-radius: 20%;
+  }
+ 
+  .openArea{
+    font-size: 300%;
+    border-radius: 50%;
+    cursor:pointer;
+   position:fixed;
+   top: 1%;
+   right: 70px;
+   z-index: 2;
+   
+  }
+  
+  
+  .logARea .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    left:50px ;
+    font-size: 36px;
+
+  }
+
+
+
+
+.fa-circle-user:hover{
+    cursor: pointer;
+  
+}
+.closeareabtn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 28px;
+}
+.userusername,.userpassword,.signin{
+    width: 80%;
+    height: 40px;
+    border: 1px solid white;
+    outline: 1px solid white;
+    border-top-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+}
+
+.userusername,.userpassword,.signin:hover{
+    cursor: pointer;
+    
+}
+.signin:hover{
+    background-color: rgba(104, 94, 71, 0.218);
+}
+
+
+
+.rememberuserspan{
+
+    float: left;
+}
+.rememberuser{
+    width: 10%;
+}
+.rememberuser:checked{
+    background-color: rgba(104, 94, 71, 0.218);
+     color: #818181;
+ }
+
+
+
+
+body{
+    background-image: url(../image/PrettyRickey_SpilledMilk_149.jpg);
+    
+}
+
+.articles{
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.homeArtcile{
+    width: 30%;
+    border: 1px solid black;
+    background-color: antiquewhite;
+    padding: 20px;
+    margin-top:  12%;
+}
+
+.imagewrap{
+    padding: 5px;
+    width: 400px;
+    height: 400px; 
+    background-image: url(../image/pisco.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    margin-right: 20px;
+} 
+.imagewrap2{
+    background-image: url(../image/prince.jpg);
+}
+.imagewrap3{
+    background-image: url(../image/martini.jpg);
+}
+.homeArtcileH2{
+    margin-top: -170px;
+    margin-left: 150px;
+    border: 1PX SOLID red;
+    display: block;
+    padding: 5px;
+    width: 120px;
+}
+
+.recipes,.topics{
+    border-top: 2px solid red;
+    position: relative;
+    margin-top: 100px;
+    
+}
+.recipesh2,.topicsh3{
+position: absolute;
+top:-35px;
+left: 2px;
+color: red;
+text-transform:capitalize;
+padding: 5px;
+font-weight: 600;
+font-size: 30px;
+
+}
+/* slider styles */
+
+.image-slider{
+    width: 700px;
+    height: 400px;
+    margin: 50px auto;
+    object-fit: cover;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 1px solid rgb(163, 90, 90);
+    box-shadow: 10px 10px 10px;
+    padding: 15px;
+    /* position: relative; */
+
+}
+
+.slider-wraper{
+    position: relative;
+    margin-left: 20%;
+}
+
+.arrow{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    color: rgb(116, 64, 64);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 30px;
+    background-color:rgba(184, 114, 84,0.05);
+    
+}
+
+.arrow-left{
+    left: 40px;
+
+}
+.arrow-right{
+    left: 620px;
+
+}
+.dots-parent{
+    display: flex;
+    position: absolute;
+    left: 25%;
+    transform: translateX(-50%);
+    bottom: 70px;
+}
+
+.child{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(184, 114, 84);
+    margin: 10px;
+
+}
+
+.activeDot{
+    background-color:  rgba(235, 113, 0, 0.825);
+}
+
+
+
+.topics{
+    width: 100%;
+    padding: 30px;
+    
+}
+.divarticle{
+    width: 90%;
+    display: flex;
+}
+
+.articleimagewrap{
+    padding: 5px;
+    width: 70%;
+    height: 400px;
+    background-image: url(../image/vineyard.jpg);
+    background-size: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+   
+}
+.articletext{
+    height: 25%;
+    width: 30%;
+    display: block;
+    font-size: 20px;
+    background-color: antiquewhite;
+    color: rgb(21, 18, 13);
+    padding: 40px;
+    align-items: center;
+    margin-left: -100px;
+    margin-top: 40px;
+}
+
+input{
+    width: 80%;
+    margin: 5px;
+    height:20px;
+    display: block;
+    background-color:rgb(242, 249, 240);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+
+.drinkwithus{
+    width: 70%;
+    height:250px;
+    background-color: rgb(241, 230, 222);
+    padding: 50px;
+    padding-left: 250px;
+    margin: 50px auto;
+    
+}
+.h3drinkwithus{
+    width: 50%;
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.pdrinkwithus{
+    font-size: 20px;
+    font-weight: 600;
+}
+.drinkwithusinput{
+    width: 30%;
+    height: 30px;
+    float: left;
+    margin-top: 5px;
+}
+.drinkwithusbtn{
+    width: 20%;
+    height: 30px;
+    background-color: black;
+    color: azure;
+   margin-top: 5px;
+}
+
+.accepting{
+    font-size: 12px;
+    display: block;
+    width: 50%;
+    
+}
+
+
+.myBtn {
+    
+    position: fixed;
+    bottom: 20px;
+    right: 50%;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 34px;
+    color: white;
+    cursor: pointer;
+    padding: 25px;
+    border-radius: 4px;
+    display: block;
+    z-index: 3;
+  }
+  
+  .myBtn:hover {
+    background-color: rgb(162, 104, 77);
+  }
+
+
+
+/* footer styles */
+
+footer{
+    width: 100%;
+    height:200px;
+    padding: 20px;
+    background-color:rgba(59, 50, 50, 0.944);
+    margin-top: 80px;
+    font-size: 40px;
+    position: relative;
+      
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
+.socmedia{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+.find{
+    font-size: 24px;
+    text-transform: capitalize;
+    color: black;
+}
+.copyrights{
+    width: 20%;
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 40%;
+}
+.fa-copyright{
+    margin-left: 20%;
+}
+
+.termsandconditions{
+    font-size: 22px;
+    width: 20%;
+}
+
+
+
+
+/* ... */
+
+
+
+
+/* aboutuspage */
+
+.aboutusArticle1{
+    width: 100%;
+    margin-top: -30px;
+}
+.aboutusArticle1img{
+    width: 100%;
+    height: 500px;
+    background-image: url(../image/pisco.jpg);
+    background-size: 100%;
+    position: relative;
+
+
+}
+.aboutusArticleh3{
+  /* display: block; */
+  font-size: 26px;
+  padding: 20px;
+  width: 600px;
+  border: 1px solid red;
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  font-size: 30px;
+  color: rgb(30, 27, 24);
+  font-weight: 600;
+  
+}
+.h4aboutusArticle1{
+    font-size: 20px;
+    height: 100px;
+    width: 100%;
+    padding: 5px;
+    /* padding-bottom: 50px; */
+    background-color: antiquewhite;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+   
+}
+
+
+
+
+.h4aboutusArticle1::before {
+    font: var(--fa-font-solid);
+    content: "\f078";
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    position: absolute ;
+    bottom: 25px;
+    right: 50%;
+    transition: 0.3s;
+    
+  }
+
+.aboutusArticle1text.active .h4aboutusArticle1::before {
+    font: var(--fa-font-solid);
+    content: "\f077";
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    position: absolute ;
+    bottom: 0;
+    right: 50%;
+    transition: 0.3s;
+}
+.aboutusArticle1text.active .paboutusArticle1{
+    display: block;
+    transition: 0.3s;
+    
+
+
+
+
+}
+.paboutusArticle1{
+    display: none;
+    width: 90%;
+    margin: auto;
+    padding: 30px;
+    background-color: antiquewhite;
+    color: black;
+    text-transform: capitalize;
+    font-style: italic;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 2%;
+    box-shadow: 5px 5px 5px;
+    transition: 0.3s;
+}
+.aboutusArticle2img{
+    background-image: url(../image/prince.jpg);
+}
+.aboutusArticle3img{
+    background-image: url(../image/martini.jpg);
+}
+
+
+
+/* drinks.html */
+
+
+.searchbox{
+    width: 50%;
+    padding: 10px;
+    
+}
+.serchboxTitle{
+    color: rgb(236, 215, 215);
+    padding: 5px;
+    text-transform: uppercase;
+}
+.searchSpace{
+    height: 30px;
+    position: relative;
+    background-color: #eed7ce;
+    
+}
+.searchSpace ::placeholder{
+    color: white;
+}
+.missing{
+    display: none;
+}
+/* .searchSpace::before{
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font: var(--fa-font-solid);
+    content: "\f002";
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 40px;
+    color: white;
+
+} */
+
+
+
+
+
+
+
+.cocktailsWraper{
+    width: 100%;
+    /* background-color: azure; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.cocktails {
+    width: 25%;
+    
+    padding: 2px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 5px;
+    border-radius: 5%;
+    color: white;
+    border: none;
+    border-bottom: 1px solid black;
+
+}
+.cocktails:hover{
+    box-shadow: 5px 5px 5px;
+    cursor: pointer;
+}
+.newdrinkwraper{
+    width: 50%;
+    margin: 5px;
+    /* height: auto; */
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: aquamarine;
+}
+.cocktailsimage{
+    width: 90%;
+    border-radius: 5%;
+    margin: 2px;
+    box-shadow: 5px 5px 5px;
+}
+.h2cocktails {
+    display: block;
+    /* height: 20px; */
+    width: auto;
+    margin: 2px;
+    
+}
+.h3cocktails{
+    display: block;
+    padding: 3px;
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #b4a6a6;
+    /* height: 20px; */
+    width: auto;
+    margin: 2px;
+}
+.instructionscocktails{
+    display: none;
+height: 20px;
+margin: 5px;
+
+}
+
+.overlay{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 50%;
+   height: 50%;
+   background-color:  rgb(153, 112, 79);
+   border-style:double;
+   box-shadow: 15px 15px 15px;
+   border-radius: 5%;
+   padding: 10px;
+   font-weight: 600;
+   display: none;
+   margin: 50px auto;
+}
+.overlay.activeOverlay{
+    display: block;
+    
+}
+
+.close {
+    position: absolute;
+    top:20px;
+    right: 20px;
+    /* display: none; */
+    color:black;
+    cursor: pointer;
+    font-size: 40px;
+    
+}
+.content{
+    margin: 5px;
+    padding: 20px;
+    color: rgb(84, 69, 99);
+    font-size: 24px;
+   text-transform: capitalize;
+   font-style: italic;
+}
+
+.delbut{
+    background-color:  rgb(153, 112, 79);
+    width: fit-content;
+    padding: 3px;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 15px 15px 15px;
+    width: 45%;
+    height: 10%;
+
+
+    
+    display: block;
+   
+    cursor: pointer;
+    margin: 5px;
+}
+.delbut:hover{
+     background-color: rgb(120, 83, 69);
+     box-shadow: 25px 25px 25px;
+     cursor: pointer;
+     
+     
+
+}
+
+.add-drink:hover{
+    background-color: rgb(120, 83, 69);
+    
+    cursor: pointer;
+
+}
+
+.add-drink{
+    width: 30px;
+    height: 30px;
+    background-color:  rgb(153, 112, 79);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    border-radius: 50%;
+    font-size: 32px;
+    color: white;
+    /* box-shadow: 10px 10px 10px; */
+    z-index: 4;
+}
+
+
+
+.overlay-add{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    background-color:  rgb(153, 112, 79);
+    border-style:double;
+    /* border: 5px solid white; */
+    border-radius: 5%;
+    padding: 10px;
+    font-weight: 600;
+    display: none;
+    margin: 50px auto;
+    box-shadow: 20px 20px 20px;
+}
+.overlay-add.active-add{
+    display: block;
+}
+.drinktitle,.description{
+    width: 100%;
+
+}
+.sub{
+    background-color:  rgb(153, 112, 79);
+    border: none;
+    border: 1px solid white;
+    box-shadow: 15px 15px 15px;
+}
+
+
+
+
+
+/* signup page  */
+
+
+
+
+  .registrationwraper{
+    width: 50%;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(105, 63, 26, 0.9);
+    padding: 4%;
+    border-bottom-right-radius: 5%; 
+    border-top-right-radius: 5%; 
+    
+  }
+  .forma{
+    font-size: 14px;
+    
+    
+  }
+ .forma input{
+    height: 20px;
+    background-color: rgb(214, 214, 197);
+    outline:none;
+    cursor:auto;
+ }
+
+ .forma input:hover{
+   background-color: rgb(250, 250, 240); ;
+ }
+ .error-text{
+    display: block;
+    color: red;
+ }
+
+
+
+
+
+
+
+ 
+/* @media only screen and (max-width: 1024px)  */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .navigation{
+        width:100%;
+    }
+    .navUl{
+ 
+       padding: 5px;
+    }
+    .navLi{
+        padding: 5px;
+        font-size: 14px;
+    
+    }
+    
+   
+    .logArea{
+        width: 10%;
+        margin-left: 5px;
+       
+        top: 10px;
+        right: 10px;
+        font-size: 22px;
+        
+    }
+    .logHidden{
+        width: 30%;
+        height: 40%;
+        
+        padding: 10px;
+        position: fixed;
+        top: 5%;
+        right: 15%;
+       
+        box-shadow: 5px 5px 5px ;
+       
+    }
+    .textushidden{
+        width: 30%;
+        height: 40%;
+
+        padding: 10px;
+        position: fixed;
+        top: 5%;
+        right: 15%;
+       
+        box-shadow: 10px 10px 10px ;
+       
+    }
+   
+    .fa-xmark{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 22px;
+    }
+    .signin,.textus{
+        width: 70px;
+        height: 10px;
+    }
+    
+   
+    .logocont{
+        width: 20%;
+        background-color: antiquewhite;
+        display: block;
+        padding: 5px;
+        
+        font-size:18px;
+        outline: 1px solid red;
+        /* text-decoration: overline; */
+    }
+    .logo:hover{
+        text-decoration: overline;
+        box-shadow: 5px 5px 5px;
+    
+    }
+    .articles{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+    
+    .homeArtcile{
+        width: 70%;
+        /* height: 40%; */
+        border: 1px solid black;
+        background-color: antiquewhite;
+        padding: 10px;
+        margin: 30px auto;
+
+    }
+    .homeArtcile p{
+        padding: 20px;
+        display: block;
+        width: 90%;
+    }
+    body{
+        align-items: center;
+    }
+    .imagewrap{
+        padding: 5px;
+        background-image: url(../image/pisco.jpg);
+        /* background-position: cover; */
+        background-size: 100%;
+        width: 300px;
+        height: 300px; 
+        box-sizing: border-box;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        margin-right: 20px;
+    } 
+   
+
+    .imagewrap2{
+        background-image: url(../image/prince.jpg);
+    }
+    .imagewrap3{
+        background-image: url(../image/martini.jpg);
+    }
+    .homeArtcileH2{
+        margin-top: -150px;
+        margin-left: 100px;
+        border: 1PX SOLID red;
+        display: block;
+        padding: 3px;
+        width: 200px;
+    }
+
+
+
+    .recipes,.topics{
+        border-top: 2px solid red;
+        position: relative;
+        margin: 40px auto;
+        
+    }
+    .recipesh2,.topicsh3{
+    position: absolute;
+    top:-35px;
+    left: 2px;
+    color: red;
+    text-transform:capitalize;
+    padding: 5px;
+    font-weight: 600;
+    font-size: 20px;
+    
+    }
+    
+    
+    
+    
+    .topics,.recipes{
+        width: 70%;
+        padding: 10px;
+       
+        
+    }
+    .divarticle{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .articleimagewrap{
+        padding: 5px;
+        width: 100%;
+        height: 400px;
+        background-image: url(../image/vineyard.jpg);
+        background-size: 100%;
+        object-fit: cover;
+        background-repeat: no-repeat;
+       
+    }
+    .articletext{
+        height: 25%;
+        width: 100%;
+        display: block;
+        font-size: 14px;
+        background-color: antiquewhite;
+        color: rgb(21, 18, 13);
+        padding: 10px;
+        align-items:flex-start;
+        margin-left:-90px;
+        margin-top: 0px;
+    }
+
+
+    input{
+        width: 50%;
+        margin: 5px;
+        height:20px;
+        display: block;
+        background-color:rgb(242, 249, 240);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+    }
+    
+    
+    .drinkwithus{
+        width: 90%;
+        height: 200px;
+        background-color: rgb(241, 230, 222);
+        padding: 30px;
+        padding-left: 40px;
+        margin: 20px ;
+        
+    }
+    .h3drinkwithus{
+        width: 80%;
+        margin-left: 1%;
+        text-align:center;
+        font-size: 14px;
+        font-family:'Courier New', Courier, monospace;
+        text-transform:lowercase;
+        border: 1px solid black;
+        padding: 10px;
+    }
+    
+  
+    .drinkwithusinput{
+        width: 60%;
+        height: 30px;
+        float: left;
+        margin-top: 5px;
+    }
+    .drinkwithusbtn{
+        width: 20%;
+        height: 30px;
+        background-color: black;
+        color: azure;
+       margin-top: 5px;
+    }
+    
+    .accepting{
+        font-size: 10px;
+        display: inline-block;
+        width: 400px;
+       
+        
+    }
+    
+    
+    .myBtn {
+        /* display: none; */
+        position: fixed;
+        bottom: 20px;
+        right: 50%;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: rgba(0, 0, 0, 0);
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+        padding: 25px;
+        border-radius: 4px;
+        display: block;
+        z-index: 3;
+      }
+      
+      .myBtn:hover {
+        background-color: rgb(162, 104, 77);
+      }
+    
+    
+    
+    footer{
+        width: 100%;
+        height:120px;
+        padding: 10px;
+        
+        background-color:rgba(59, 50, 50, 0.944);
+        margin-top: 40px;
+        font-size: 24px;
+        position: relative;
+        
+        
+        
+    }
+    .foot{
+        display: flex;
+        justify-content: space-between;
+    }
+    .socmedia{
+        width: 20%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .find{
+        font-size: 10px;
+        text-transform: capitalize;
+        color: black;
+    }
+    .copyrights{
+        width: 14%;
+        font-size: 16px;
+        position: absolute;
+        bottom: 10px;
+        left: 40%;
+    }
+    .fa-copyright{
+        margin-left: 20%;
+    }
+    
+    .termsandconditions{
+        font-size: 12px;
+        width: 22%;
+    }
+    .mapp iframe{
+       width: 150px;
+       height: 50px;
+       position: absolute;
+       bottom: 0px;
+       right: 9px;
+    }
+
+
+    
+/* slider styles */
+
+.image-slider{
+    width: 600px;
+    height: 400px;
+    margin-top: 40px;
+    margin-left: 10%;
+    object-fit: cover;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 1px solid rgb(163, 90, 90);
+    box-shadow: 10px 10px 10px;
+    padding: 5px;
+   
+
+}
+
+
+.slider-wraper{
+    position: relative;
+    margin-left: 10px;
+}
+
+.arrow{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: none;
+    color: rgb(116, 64, 64);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 30px;
+    background-color:rgba(184, 114, 84,0.05);
+    
+}
+
+.arrow-left{
+    left: 15%;
+
+}
+.arrow-right{
+    left: 600px;
+
+}
+.dots-parent{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left:70%;
+    transform: translateX(-70%);
+    bottom: 200px;
+}
+
+.child{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(184, 114, 84);
+    margin: 20px;
+
+}
+
+/* aboutuspage */
+
+.aboutusArticle1{
+    width: 100%;
+    margin-top: -29px;
+}
+.aboutusArticle1img{
+    width: 100%;
+    height: 400px;
+    background-image: url(../image/pisco.jpg);
+    background-size: 100%;
+    position: relative;
+
+
+}
+.aboutusArticleh3{
+  font-size: 24px;
+  padding: 15px;
+  width: 600px;
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  font-size: 30px;
+  
+}
+.h4aboutusArticle1{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    padding: 5px;
+}
+.paboutusArticle1{
+    display: none;
+    width: 90%;
+    margin: auto;
+    padding: 25px;
+    text-transform:lowercase;
+    font-style:italic;
+    font-size: 12px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 2%;
+    box-shadow: 5px 5px 5px;
+}
+.aboutusArticle2img{
+    background-image: url(../image/prince.jpg);
+}
+.aboutusArticle3img{
+    background-image: url(../image/martini.jpg);
+}
+
+
+
+
+/* drinks.html */
+
+
+.cocktailsWraper{
+    width: 100%;
+    /* background-color: azure; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.cocktails {
+    width: 20%;
+    padding: 2px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 5px;
+    border-radius: 5%;
+    color: white;
+    border: none;
+    border-bottom: 1px solid black;
+
+}
+.cocktails:hover{
+    box-shadow: 5px 5px 5px;
+    cursor: pointer;
+}
+.newdrinkwraper{
+    width: 50%;
+    margin: 5px;
+    /* height: auto; */
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: aquamarine;
+}
+.cocktailsimage{
+    width: 90%;
+    border-radius: 5%;
+    margin: 2px;
+    box-shadow: 5px 5px 5px;
+}
+.h2cocktails {
+    display: block;
+    /* height: 20px; */
+    width: auto;
+    margin: 2px;
+    font-size: 14px;
+    
+}
+.h3cocktails{
+    display: block;
+    font-size: 12px;
+    width: auto;
+    margin: 2px;
+}
+.instructionscocktails{
+display: none;
+
+font-size: 12px;
+margin: 5px;
+}
+
+.overlay{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 40%;
+   height: 20%;
+   background-color:  rgb(153, 112, 79);
+   border-style:double;
+   box-shadow: 10px 10px 10px;
+   border-radius: 5%;
+   font-size: 10px;
+   padding: 10px;
+   font-weight: 600;
+   display: none;
+   margin: 30px auto;
+}
+.overlay.activeOverlay{
+    display: block;
+    
+}
+
+.close {
+    position: absolute;
+    top:20px;
+    right: 20px;
+    /* display: none; */
+    color:black;
+    cursor: pointer;
+    font-size: 30px;
+    
+}
+.content{
+    margin: 4px;
+    padding: 10px;
+    color: rgb(84, 69, 99);
+    font-size: 12px;
+   text-transform: capitalize;
+   font-style: italic;
+}
+
+.delbut{
+    background-color:  rgb(153, 112, 79);
+    width: fit-content;
+    padding: 3px;
+    font-size: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 15px 15px 15px;
+    width: 45%;
+    height: 10%;
+    
+    display: block;
+   
+    cursor: pointer;
+    margin: 5px;
+}
+.delbut:hover{
+     background-color: rgb(120, 83, 69);
+     box-shadow: 15px 15px 15px;
+     cursor: pointer;
+     
+     
+
+}
+
+.add-drink:hover{
+    background-color: rgb(120, 83, 69);
+    
+    cursor: pointer;
+
+}
+
+.add-drink{
+    width: 30px;
+    height: 30px;
+    background-color:  rgb(153, 112, 79);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    border-radius: 50%;
+    font-size: 30px;
+    color: white;
+    /* box-shadow: 10px 10px 10px; */
+    z-index: 4;
+}
+
+
+
+.overlay-add{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    background-color:  rgb(153, 112, 79);
+    border-style:double;
+    /* border: 5px solid white; */
+    border-radius: 5%;
+    padding: 10px;
+    font-weight: 600;
+    display: none;
+    margin: 50px auto;
+    box-shadow: 10px 10px 10px;
+}
+.overlay-add.active-add{
+    display: block;
+}
+.drinktitle,.description{
+    width: 100%;
+
+}
+.sub{
+    background-color:  rgb(153, 112, 79);
+    border: none;
+    border: 1px solid white;
+    box-shadow: 15px 15px 15px;
+}
+
+/* * signup page  */ */
+
+
+
+
+  .registrationwraper{
+   
+    padding: 2%;
+   
+  }
+  .forma{
+    font-size: 14px;
+    
+  }
+ .forma input{
+    height: 20px;
+    width: 70%;
+ }
+
+
+
+
+
+
+
+
+}
+
+
+
+
+  
+
+
+  @media screen and (max-width: 768px) and (min-width: 480px){
+    .menuBar{
+        display: none;
+    }
+
+    .sidenav {
+        display: block;
+        
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 5;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 50px;
+      }
+      .overlayMenu{
+        font-size:40px;
+        cursor:pointer;
+        color: rgb(34, 30, 30);
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        
+      }
+      
+      .sidenav a {
+        padding: 4px 4px 4px 32px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+      
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+ 
+
+    .logArea{
+        width: 20%;
+        margin-left: 5px;
+        margin-right: 10%;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 30px;
+        color:black;
+    }
+
+    .logocont{
+        width: 30%;
+        background-color: antiquewhite;
+        display: block;
+        padding: 10px;
+        margin-left: 30%;
+        margin-right: 10px;
+        
+        
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-transform: capitalize;
+        outline: 1px solid red;
+      
+    }
+
+
+
+
+   
+   
+    
+    .logHidden{
+        width: 30%;
+        height: 40%;
+        
+        padding: 10px;
+        position: fixed;
+        top: 5%;
+        right: 20%;
+       
+        box-shadow: 5px 5px 5px ;
+       
+    }
+    /* .textushidden{
+        width: 40%;
+        height: 40%;
+
+        padding: 10px;
+        position: fixed;
+        top: 5%;
+        right: 20%;
+       
+        box-shadow: 10px 10px 10px ;
+        transition: 0.3s;
+       
+    } */
+   
+    .fa-xmark{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 22px;
+    }
+    .signin{
+        padding: 10px;
+        width: 120px;
+        height: 30px;
+    }
+    
+   
+    
+    .logo:hover{
+        text-decoration: overline;
+        box-shadow: 5px 5px 5px;
+    
+    }
+    .articles{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+    
+    .homeArtcile{
+        width: 70%;
+        /* height: 40%; */
+        border: 1px solid black;
+        background-color: antiquewhite;
+        padding: 10px;
+        margin: 30px auto;
+
+    }
+    .homeArtcile p{
+        padding: 20px;
+        display: block;
+        width: 90%;
+    }
+    body{
+        align-items: center;
+    }
+    .imagewrap{
+        padding: 5px;
+        
+        background-image: url(../image/pisco.jpg);
+        background-position: cover;
+        background-size: 100%;
+        width: 300px;
+        height: 300px; 
+        box-sizing: border-box;
+        overflow: hidden;
+
+        
+        
+        background-repeat: no-repeat;
+        
+        margin-right: 20px;
+    } 
+   
+
+    .imagewrap2{
+        background-image: url(../image/prince.jpg);
+    }
+    .imagewrap3{
+        background-image: url(../image/martini.jpg);
+    }
+    .homeArtcileH2{
+        margin-top: -60%;
+        margin-left: 10%;
+        border: 1PX SOLID red;
+        display: block;
+        padding: 3px;
+        width: 200px;
+    }
+
+
+
+    .recipes,.topics{
+        border-top: 2px solid red;
+        position: relative;
+        margin: 40px auto;
+        width: 70%;
+        padding: 10px;
+        
+    }
+    .recipesh2,.topicsh3{
+    position: absolute;
+    top:-35px;
+    left: 2px;
+    color: red;
+    text-transform:capitalize;
+    padding: 5px;
+    font-weight: 600;
+    font-size: 20px;
+    
+    }
+    
+    
+    
+
+    .divarticle{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .articleimagewrap{
+        padding: 5px;
+        width: 100%;
+        height: 400px;
+        background-image: url(../image/vineyard.jpg);
+        background-size: 100%;
+        object-fit: cover;
+        background-repeat: no-repeat;
+       
+    }
+    .articletext{
+        height: 25%;
+        width: 100%;
+        display: block;
+        font-size: 14px;
+        background-color: antiquewhite;
+        color: rgb(21, 18, 13);
+        padding: 10px;
+        align-items:flex-start;
+        margin-left:-90px;
+        margin-top: 0px;
+    }
+
+
+    input{
+        width: 50%;
+        margin: 5px;
+        height:20px;
+        display: block;
+        background-color:rgb(242, 249, 240);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+    }
+    
+    
+    .drinkwithus{
+        width: 90%;
+        height: 200px;
+        background-color: rgb(241, 230, 222);
+        padding: 30px;
+        padding-left: 40px;
+        margin: 20px ;
+        
+    }
+    .h3drinkwithus{
+        width: 80%;
+        margin-left: 1%;
+        text-align:center;
+        font-size: 14px;
+        font-family:'Courier New', Courier, monospace;
+        text-transform:lowercase;
+        border: 1px solid black;
+        padding: 10px;
+    }
+    
+  
+    .drinkwithusinput{
+        width: 60%;
+        height: 30px;
+        float: left;
+        margin-top: 5px;
+    }
+    .drinkwithusbtn{
+        width: 20%;
+        height: 30px;
+        background-color: black;
+        color: azure;
+       margin-top: 5px;
+    }
+    
+    .accepting{
+        font-size: 10px;
+        display: inline-block;
+        width: 400px;
+       
+        
+    }
+    
+    
+    .myBtn {
+        /* display: none; */
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+       
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: rgba(0, 0, 0, 0);
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+        padding: 25px;
+        border-radius: 4px;
+        display: block;
+        z-index: 3;
+      }
+      
+      .myBtn:hover {
+        background-color: rgb(162, 104, 77);
+      }
+    
+    
+    
+    footer{
+        width: 100%;
+        height:120px;
+        padding: 10px;
+        
+        background-color:rgba(59, 50, 50, 0.944);
+        margin-top: 40px;
+        font-size: 20px;
+        position: relative;
+        
+        
+        
+    }
+    .foot{
+        display: flex;
+        justify-content: space-between;
+    }
+    .socmedia{
+        width: 20%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .find{
+        font-size: 10px;
+        text-transform: capitalize;
+        color: black;
+    }
+    .copyrights{
+        width: 14%;
+        font-size: 16px;
+        position: absolute;
+        bottom: 10px;
+        left: 40%;
+    }
+    .fa-copyright{
+        margin-left: 20%;
+    }
+    
+    .termsandconditions{
+        font-size: 12px;
+        width: 22%;
+    }
+    .mapp iframe{
+       width: 150px;
+       height: 50px;
+       position: absolute;
+       bottom: 0px;
+       right: 9px;
+    }
+
+
+    
+/* slider styles */
+
+.image-slider{
+    width: 400px;
+    height: 300px;
+    margin-top: 40px;
+    margin-left: 1%;
+    object-fit: cover;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 1px solid rgb(163, 90, 90);
+    box-shadow: 10px 10px 10px;
+    padding: 5px;
+   
+
+}
+
+
+.slider-wraper{
+    position: relative;
+    margin-left: 5px;
+}
+
+.arrow{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    color: rgb(116, 64, 64);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 30px;
+    background-color:rgba(184, 114, 84,0.05);
+    
+}
+
+.arrow-left{
+    left: 10%;
+
+}
+.arrow-right{
+    left: 70%;
+
+}
+.dots-parent{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left:40%;
+    transform: translateX(-40%);
+    bottom: 50px;
+}
+
+.child{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(184, 114, 84);
+    margin: 10px;
+
+}
+
+
+/* aboutuspage */
+
+.aboutusArticle1{
+    width: 100%;
+    margin-top: -29px;
+}
+.aboutusArticle1img{
+    width: 100%;
+    height: 400px;
+    background-image: url(../image/pisco.jpg);
+    background-size: 100%;
+    position: relative;
+
+
+}
+.aboutusArticleh3{
+  font-size: 20px;
+  padding: 5px;
+  width: 350px;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  
+}
+.h4aboutusArticle1{
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 0px;
+    text-align: center;
+    padding: 5px;
+}
+
+
+.aboutusArticle2img{
+    background-image: url(../image/prince.jpg);
+}
+.aboutusArticle3img{
+    background-image: url(../image/martini.jpg);
+}
+
+.registrationwraper{
+   width: 90%;
+    padding: 2%;
+   
+  }
+  .forma{
+    font-size: 14px;
+    
+  }
+ .forma input{
+    height: 20px;
+    width: 70%;
+ }
+
+
+
+
+
+
+
+
+
+
+  }
+
+  @media screen and (max-width: 480px) and (min-width: 320px) {
+    .menuBar{
+        display: none;
+    }
+
+    .sidenav {
+        display: block;
+        
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 5;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 40px;
+      }
+      .overlayMenu{
+        font-size:34px;
+        cursor:pointer ;
+        color: rgb(34, 30, 30);
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        
+      }
+      
+      .sidenav a {
+        padding: 8px 8px 8px 28px;
+        text-decoration: none;
+        font-size: 22px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+      
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+ 
+
+    .logArea{
+        width: 20%;
+        /* margin-left: 5px;
+        margin-right: 40%; */
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 5px;
+        right: 100px;
+        font-size: 30px;
+        color:black;
+    }
+
+    .logocont{
+        width: 30%;
+        background-color: antiquewhite;
+        display: block;
+        padding: 10px;
+        margin-left: 30%;
+        margin-right: 10px;
+        /* position: absolute;
+        top:5px;
+        left: 65%; */
+        
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-transform: capitalize;
+        outline: 1px solid red;
+        /* text-decoration: overline; */
+    }
+
+
+
+
+   
+   
+    
+    .logHidden{
+        width: 30%;
+        height: 40%;
+        
+        padding: 10px;
+        position: fixed;
+        top: 5%;
+        right: 20%;
+       
+        box-shadow: 5px 5px 5px ;
+       
+    }
+    /* .textushidden{
+        width: 40%;
+        height: 40%;
+
+        padding: 10px;
+        position: fixed;
+        top: 5%;
+        right: 20%;
+       
+        box-shadow: 10px 10px 10px ;
+        transition: 0.3s;
+       
+    } */
+   
+    .fa-xmark{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 22px;
+    }
+    .signin{
+        
+            padding: 10px;
+            width: 120px;
+            height: 30px;
+
+    }
+    
+   
+    
+    .logo:hover{
+        text-decoration: overline;
+        box-shadow: 5px 5px 5px;
+    
+    }
+    .articles{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+    
+    .homeArtcile{
+        width: 80%;
+        /* height: 40%; */
+        border: 1px solid black;
+        background-color: antiquewhite;
+        padding: 5px;
+        margin: 30px auto;
+
+    }
+    .homeArtcile p{
+        padding: 10px;
+        font-size: 14px;
+        display: block;
+        width: 90%;
+    }
+    body{
+        align-items: center;
+    }
+    .imagewrap{
+        padding: 5px;
+        
+        background-image: url(../image/pisco.jpg);
+        background-position: cover;
+        background-size: 100%;
+        width: 300px;
+        height: 300px; 
+        box-sizing: border-box;
+        overflow: hidden;
+
+        background-repeat: no-repeat;
+        
+        margin-right: 20px;
+    } 
+   
+
+    .imagewrap2{
+        background-image: url(../image/prince.jpg);
+    }
+    .imagewrap3{
+        background-image: url(../image/martini.jpg);
+    }
+    .homeArtcileH2{
+        margin-top: -70%;
+        margin-left: 10%;
+        border: 1PX SOLID red;
+        display: block;
+        padding: 3px;
+        width: 200px;
+    }
+
+
+
+    .recipes,.topics{
+        border-top: 2px solid red;
+        position: relative;
+        margin: 40px auto;
+        width: 70%;
+        padding: 10px;
+        
+    }
+    .recipesh2,.topicsh3{
+    position: absolute;
+    top:-35px;
+    left: 2px;
+    color: red;
+    text-transform:capitalize;
+    padding: 5px;
+    font-weight: 600;
+    font-size: 20px;
+    
+    }
+    
+    
+    
+
+    .divarticle{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .articleimagewrap{
+        padding: 5px;
+        width: 300px;
+        height: 300px;
+        background-image: url(../image/vineyard.jpg);
+        background-size: 100%;
+        object-fit: cover;
+        background-repeat: no-repeat;
+       
+    }
+    .articletext{
+        /* height: 25%; */
+        width: 100%;
+        display: block;
+        font-size: 14px;
+        background-color: antiquewhite;
+        color: rgb(21, 18, 13);
+        padding: 10px;
+        align-items:flex-start;
+        margin-left:-70px;
+        margin-top: 0px;
+    }
+
+
+    input{
+        width: 50%;
+        margin: 5px;
+        height:15px;
+        display: block;
+        background-color:rgb(242, 249, 240);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+    }
+    
+    
+    .drinkwithus{
+        width: 100%;
+        height: 180px;
+       
+        background-color: rgb(241, 230, 222);
+        padding: 20px;
+        padding-left: 40px;
+        margin: 20px ;
+        
+    }
+    .h3drinkwithus{
+        width: 80%;
+        margin-left: 1%;
+        text-align:center;
+        font-size: 12px;
+        font-family:'Courier New', Courier, monospace;
+        text-transform:lowercase;
+        border: 1px solid black;
+        padding: 10px;
+    }
+    .pdrinkwithus{
+        font-size: 14px;
+    }
+    
+  
+    .drinkwithusinput{
+        width: 60%;
+        height: 25px;
+        float: left;
+        margin-top: 5px;
+    }
+    .drinkwithusbtn{
+        width: 20%;
+        height: 25px;
+        background-color: black;
+        color: azure;
+       margin-top: 5px;
+    }
+    
+    .accepting{
+        font-size: 10px;
+        padding: 5px;
+        display: inline-block;
+        width: 300px;
+       
+        
+    }
+    
+    
+    .myBtn {
+        /* display: none; */
+        position: fixed;
+        bottom: 40px;
+        left: 50%;
+       
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: rgba(0, 0, 0, 0);
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+        padding: 25px;
+        border-radius: 4px;
+        display: block;
+        z-index: 3;
+      }
+      
+      .myBtn:hover {
+        background-color: rgb(162, 104, 77);
+      }
+    
+    
+    
+    footer{
+        width: 100%;
+        height:120px;
+        padding: 5px;
+        
+        background-color:rgba(59, 50, 50, 0.944);
+        margin-top: 40px;
+        font-size: 15px;
+        position: relative;
+        
+        
+        
+    }
+    .foot{
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: space-between;
+    }
+    .socmedia{
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .find{
+        font-size: 10px;
+        text-transform: capitalize;
+        color: black;
+    }
+    .copyrights{
+        width: 14%;
+        font-size: 12px;
+        position: absolute;
+        bottom: 10px;
+        left: 40%;
+    }
+    .fa-copyright{
+        margin-left: 20%;
+    }
+    
+    .termsandconditions{
+        font-size: 10px;
+        width: 25%;
+    }
+    .mapp iframe{
+       width: 100px;
+       height: 50px;
+       position: absolute;
+       bottom: 0px;
+       right: 5px;
+       margin-top: 2px;
+    }
+
+
+    
+/* slider styles */
+
+.image-slider{
+    width: 350px;
+    height: 300px;
+    margin-top: 40px;
+    margin-left: 10px;
+    object-fit: cover;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 1px solid rgb(163, 90, 90);
+    box-shadow: 10px 10px 10px;
+    padding: 5px;
+   
+
+}
+
+
+.slider-wraper{
+    position: relative;
+    margin-left: 5px;
+}
+
+.arrow{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    color: rgb(116, 64, 64);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 30px;
+    background-color:rgba(184, 114, 84,0.05);
+    
+}
+
+.arrow-left{
+    left: 10%;
+
+}
+.arrow-right{
+    left: 310px;
+
+}
+.dots-parent{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left:70%;
+    transform: translateX(-40%);
+    bottom: 50px;
+}
+.recipes{
+    margin-left: 5px;
+}
+
+.child{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(184, 114, 84);
+    margin: 10px;
+
+}
+
+
+/* aboutuspage */
+
+.aboutusArticle1{
+    width: 100%;
+    margin-top: -29px;
+}
+.paboutusArticle1{
+    width: 100%;
+    font-size: 10px;
+}
+.aboutusArticle1img{
+    width: 100%;
+    height: 400px;
+    background-image: url(../image/pisco.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+
+
+
+}
+.aboutusArticleh3{
+  font-size: 20px;
+  padding: 5px;
+  width: 200px;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  
+}
+.h4aboutusArticle1{
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: -175px;
+    text-align: center;
+    padding: 5px;
+}
+
+
+.aboutusArticle2img{
+    background-image: url(../image/prince.jpg);
+}
+.aboutusArticle3img{
+    background-image: url(../image/martini.jpg);
+}
+
+.registrationwraper{
+   width: 90%;
+    padding: 2%;
+   
+  }
+  .forma{
+    font-size: 14px;
+    
+  }
+ .forma input{
+    height: 20px;
+    width: 70%;
+ }
+
+
+
+ /* drinks.html */
+
+
+
+
+
+.cocktailsWraper{
+    width: 100%;
+    /* background-color: azure; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.cocktails {
+    width: 70%;
+    
+    padding: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 5px;
+    border-radius: 5%;
+    color: white;
+    border: none;
+    border-bottom: 1px solid black;
+
+}
+.cocktails:hover{
+    box-shadow: 5px 5px 5px;
+    cursor: pointer;
+}
+.newdrinkwraper{
+    width: 50%;
+    margin: 5px;
+    /* height: auto; */
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: aquamarine;
+}
+.cocktailsimage{
+    width: 90%;
+    border-radius: 5%;
+    margin: 2px;
+    box-shadow: 5px 5px 5px;
+}
+.h2cocktails {
+    display: block;
+    /* height: 20px; */
+    width: auto;
+    margin: 2px;
+    
+}
+.h3cocktails{
+    display: block;
+    padding: 3px;
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #b4a6a6;
+    /* height: 20px; */
+    width: auto;
+    margin: 2px;
+}
+.instructionscocktails{
+display: none;
+height: 20px;
+margin: 5px;
+
+}
+
+.overlay{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 80%;
+   height: 50%;
+   background-color:  rgb(153, 112, 79);
+   border-style:double;
+   box-shadow: 15px 15px 15px;
+   border-radius: 5%;
+   padding: 10px;
+   font-weight: 600;
+   display: none;
+   margin: 50px auto;
+}
+.overlay.activeOverlay{
+    display: block;
+    
+}
+
+.close {
+    position: absolute;
+    top:20px;
+    right: 20px;
+    /* display: none; */
+    color:black;
+    cursor: pointer;
+    font-size: 30px;
+    
+}
+.content{
+    margin: 5px;
+    padding: 20px;
+    color: rgb(84, 69, 99);
+    font-size: 24px;
+   text-transform: capitalize;
+   font-style: italic;
+}
+
+.delbut{
+    background-color:  rgb(153, 112, 79);
+    width: fit-content;
+    padding: 3px;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 15px 15px 15px;
+    width: 45%;
+    height: 10%;
+
+
+    
+    display: block;
+   
+    cursor: pointer;
+    margin: 5px;
+}
+.delbut:hover{
+     background-color: rgb(120, 83, 69);
+     box-shadow: 25px 25px 25px;
+     cursor: pointer;
+     
+     
+
+}
+
+.add-drink:hover{
+    background-color: rgb(120, 83, 69);
+    
+    cursor: pointer;
+
+}
+
+.add-drink{
+    width: 30px;
+    height: 30px;
+    background-color:  rgb(153, 112, 79);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    border-radius: 50%;
+    font-size: 32px;
+    color: white;
+    /* box-shadow: 10px 10px 10px; */
+    z-index: 4;
+}
+
+
+
+.overlay-add{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    background-color:  rgb(153, 112, 79);
+    border-style:double;
+    /* border: 5px solid white; */
+    border-radius: 5%;
+    padding: 10px;
+    font-weight: 600;
+    display: none;
+    margin: 50px auto;
+    box-shadow: 20px 20px 20px;
+}
+.overlay-add.active-add{
+    display: block;
+}
+.drinktitle,.description{
+    width: 100%;
+
+}
+.sub{
+    background-color:  rgb(153, 112, 79);
+    border: none;
+    border: 1px solid white;
+    box-shadow: 15px 15px 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+  }
+  
+  
