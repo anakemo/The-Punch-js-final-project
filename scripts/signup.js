@@ -1,3 +1,7 @@
+
+// create registration form and validate input values 
+
+
 let forma=document.getElementById("forma");
 
 forma.addEventListener("submit",function(event){
@@ -58,13 +62,7 @@ let gender = false;
   }
 
 
-// gender.forEach((item) => {
-//     if (!item.checked) {
-//         errors.gender="please choose your gender";
-        
-//     }
-    
-// })
+
 
 if(!terms.checked){
     errors.terms="you have to accept our terms and conditions";
@@ -101,11 +99,6 @@ toggleIcon.addEventListener("click", function () {
     toggleIcon.classList.add("fa-eye");
   }})
 
-// togg.addEventListener("click",function(){
-//   pass1.input.type="text";
-// //   pass1.value.type="text";
-// })
-
 formElement.querySelectorAll('.error-text').forEach((item)=>{
     item.textContent=" ";
 })
@@ -120,12 +113,6 @@ if(spanError){
 if (Object.keys(errors).length == 0) {
     formElement.submit();
   }
-
-
-console.log(errors);
-
-
-
 
 
 

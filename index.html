@@ -29,17 +29,22 @@
             </div>
         </div>
         <div class="userarea">
-            <span  class="openArea" id="openArea"  onclick="openareaNav()"></span>
+            <span  class="openArea" id="openArea"  onclick="openareaNav()">
             
             <i class="fa-solid fa-circle-user" id="fauser" ></i>
+        </span>
         </div>
             <div id="logARea" class="logARea">
+
+                <form action="#" id="loggin" method="POST">
+
                 <a href="javascript:void(0)" class="closeareabtn" onclick="closeareaNav()"><i class="fa-solid fa-xmark"></i></a>
                 <input type="text" name="userusername" id="userusername" class="userusername" placeholder="enter username...">
                 <input type="password" name="userpassword" id="userpassword" class="userpassword" placeholder="enter your password...">
                 <span class="rememberuserspan"> remember user</span>
                 <input type="checkbox" name="rememberuser" id="rememberuser" class="rememberuser">
                 <button type="submit" id="signin" class="signin"> sign in </button>
+            </form>
 
               </div>
             <!-- </div> -->
@@ -170,6 +175,7 @@
 
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
     <script src="scripts/slider.js"></script>
     <script src="scripts/scripts.js"></script>
     

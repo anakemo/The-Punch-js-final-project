@@ -1,3 +1,7 @@
+
+// create slider
+
+
 let data=[
 {
 id:1,
@@ -52,13 +56,7 @@ function createImageTag(item){
     return imgTag;
 }
 
-function createH3tag (item){
-const h3Tag=document.createElement("h3");
-h3Tag.innerText=item.title;
 
-return h3Tag;
-
-}
 
 function createDots(){
     const dots=document.createElement("div");
@@ -84,22 +82,10 @@ function setslide(){
     sliderContent.innerHTML=" ";
     const slideItem=createDivTag(data[sliderIndex]);
     const tagImage=createImageTag(data[sliderIndex]);
-    // const tagH3=createH3tag(data[sliderIndex]);
     const doTts=createDots();
-    // const slideBox=document.getElementById('slider-wraper');
-
     slideItem.appendChild(tagImage);
-    // slideItem.appendChild(tagH3);
     sliderContent.appendChild(slideItem);
     sliderContent.appendChild(doTts);
-    // slideBox.appendChild(sliderContent);
-
-
-
-
-
-
-
     dotactive();
 
 
@@ -107,7 +93,6 @@ function setslide(){
 
 function dotactive(){
     dotchild[sliderIndex].classList.add('activeDot');
-
 }
 
 function arrowLeftclick(){
@@ -139,46 +124,9 @@ function arrowRightclick(){
 
 
 
-
-
 setInterval(()=>{
     arrowRightclick();
 },2000);
 
 setslide();
 
-
-// let logIN=document.getElementById("faUser");
-// let logBox=document.getElementById("logHidden");
-// let closeLogBox=document.getElementById("fa-xmark");
-
-
-// logIN.addEventListener("click",function(){
-//     logBox.style.cursor=("pointer");
-//     logBox.style.display=("block");
-    
-
-// })
-
-// closeLogBox.addEventListener("click",function(){
-//     logBox.style.cursor=("pointer");
-//     logBox.style.display=("none");
-
-// })
-
-// let enLop=document.getElementById("fa-envelope");
-// let textHidBox=document.getElementById("textushidden");
-// let closeTextBox=document.getElementById("fa-xmarkTex");
-
-// enLop.addEventListener("click",function(){
-//     textHidBox.style.cursor=("pointer");
-//     textHidBox.style.display=("block");
-    
-
-// })
-
-// closeTextBox.addEventListener("click",function(){
-//     textHidBox.style.cursor=("pointer");
-//     textHidBox.style.display=("none");
-
-// })

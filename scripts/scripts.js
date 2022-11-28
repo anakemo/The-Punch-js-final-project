@@ -119,3 +119,29 @@ function closeareaNav() {
 }
 
 // 
+
+
+
+// saving username in cookies
+
+
+document.getElementById("loggin").addEventListener("submit",function(event){
+  event.preventDefault();
+
+  let saveUser=document.getElementById("rememberuser");
+
+  if (saveUser.checked) {
+    let usernameValue = document.getElementById("userusername").value;
+    Cookies.set("saveusername_cookies", usernameValue);
+  } else {
+    Cookies.remove("saveusername_cookies");
+  }
+  event.target.submit();
+});
+
+let savedUsername = Cookies.get("saveusername_cookies");
+
+if (savedUsername) {
+  document.getElementById("userusername").value = savedUsername;
+ document.getElementById("rememberuser").checked = true;
+}

@@ -1,3 +1,10 @@
+
+// create drinks page
+
+
+
+
+
 let mainWraper=document.getElementById("cocktailsWraper");
 let cockOverlay=document.getElementById("overlay");
 let overlayContent=document.getElementById("content");
@@ -73,7 +80,7 @@ function createCocktailsLogic(item){
 
         let id=(item.idDrink)
         cockOverlay.classList.add("activeOverlay");
-        // console.log(id);
+        
 
         let url = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=5${id}';
         ajax(url,function(dataResponse){
@@ -146,6 +153,10 @@ ajax("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=5",function(dataR
 
 
 });
+
+
+
+// filter drinks from searchbox
 
 function filterDrinks(searchItem){
     drinksArray.forEach(item=>{
